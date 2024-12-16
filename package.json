@@ -1,4 +1,5 @@
 {
+  "homepage": "https://omara2001.github.io/llminaboxClient",
   "name": "llminabox_client",
   "version": "1.0.0",
   "description": "llminabox client Material Dashboard",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/cache": "11.10.8",
